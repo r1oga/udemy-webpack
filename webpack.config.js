@@ -5,7 +5,8 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: 'build/'
   },
   mode: 'development',
   module: {
@@ -24,6 +25,16 @@ const config = {
             loader: MiniCssExtractPlugin.loader
           },
           'css-loader'
+        ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: { limit: 100000 }
+          },
+          'image-webpack-loader'
         ]
       }
     ]
