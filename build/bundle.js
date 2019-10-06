@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/image_viewer.js":
+/*!*****************************!*\
+  !*** ./src/image_viewer.js ***!
+  \*****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_image_viewer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/image_viewer.css */ \"./styles/image_viewer.css\");\n/* harmony import */ var _styles_image_viewer_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_image_viewer_css__WEBPACK_IMPORTED_MODULE_0__);\n\nvar image = document.createElement('img');\nimage.src = 'http://lorempixel.com/400/400';\ndocument.body.appendChild(image);\n\n//# sourceURL=webpack:///./src/image_viewer.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var sum = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\n\nvar total = sum(10, 2);\nconsole.log(total);\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\n/* harmony import */ var _image_viewer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./image_viewer */ \"./src/image_viewer.js\");\n\n\nvar total = Object(_sum__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(10, 2);\nconsole.log(total);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -101,10 +114,22 @@ eval("var sum = __webpack_require__(/*! ./sum */ \"./src/sum.js\");\n\nvar total
 /*!********************!*\
   !*** ./src/sum.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("var sum = function sum(a, b) {\n  return a + b;\n};\n\nmodule.exports = sum;\n\n//# sourceURL=webpack:///./src/sum.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar sum = function sum(a, b) {\n  return a + b;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (sum);\n\n//# sourceURL=webpack:///./src/sum.js?");
+
+/***/ }),
+
+/***/ "./styles/image_viewer.css":
+/*!*********************************!*\
+  !*** ./styles/image_viewer.css ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/image_viewer.css?");
 
 /***/ })
 
